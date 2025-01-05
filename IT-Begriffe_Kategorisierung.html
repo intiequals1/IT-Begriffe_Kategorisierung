@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IT-Begriffe Flowchart</title>
+    <!-- Mermaid Script einbinden -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+ 
+    <h1>Student Strategies for Categorizing IT-related Terms</h1>
+    
+    <h2>Zitation:</h2>
+    <p>Brinda, T., Napierala, S., Tobinski, D., & Diethelm, I. (2019). Student strategies for categorizing IT-related terms. Educational and Information Technologies, 24(3), 2095-2125.</p>
+    <p>Link: <a href="https://www.researchgate.net/publication/330214642_Student_Strategies_for_Categorizing_IT-Related_Terms" target="_blank" rel="noopener noreferrer">Researchgate</a></p>
+    <h2>Zusammenfassung:</h2>
+    <p>Diese empirische Studie untersucht, 
+        wie Schüler und Studierende verschiedener Bildungsstufen (von Grundschule bis Hochschule) 
+        IT-bezogene Begriffe kategorisieren. Die Forschung basiert auf einer Befragung von 490 deutschen Teilnehmern, 
+        denen 23 IT-bezogene Begriffe präsentiert wurden, die sie in selbstdefinierte Kategorien einordnen sollten. 
+        Die Studie identifizierte verschiedene Kategorisierungsstrategien wie Generalisierung, Zweckbestimmung, 
+        Nutzungsort, Zustand, Teil-Ganzes-Beziehungen und Assoziation. Die Ergebnisse zeigen, 
+        dass jüngere Teilnehmer konkretere Kategorienamen verwendeten, während ältere Teilnehmer 
+        zu abstrakteren Kategorisierungen neigten. Einige Begriffe wie "Roboter" und "3D" waren 
+        für die Teilnehmer schwerer zu kategorisieren.</p>
+
+    <h2>Haupterkenntnisse:</h2>
+    <ul>
+        <li>Die Fähigkeit zur abstrakten Kategorisierung nimmt mit dem Alter/Bildungsgrad zu</li>
+        <li>Durchschnittlich wurden 5 Kategorien pro Teilnehmer gebildet</li>
+        <li>Einige Begriffe (z.B. Roboter, 3D) waren schwerer zu kategorisieren</li>
+        <li>Die Kategorisierungsstrategien reichen von konkreten bis zu abstrakten Ansätzen</li>
+    </ul>
+
+    <!-- Das div-Element mit der Klasse "mermaid" ist wichtig -->
+    <div class="mermaid">
+        flowchart TD
+            A[Start] --> B{Möchte ich Begriffe verstehen?}
+            B -->|Nein| C[Ende: Keine Aktion erforderlich]
+            B -->|Ja| D{Wofür benötige ich die Begriffe?}
+            
+            D -->|Arbeit| E[Berufsbezogene Kategorien]
+            D -->|Freizeit| F[Freizeitbezogene Kategorien]
+            D -->|Lernen| G[Lernbezogene Kategorien]
+            
+            E --> E1[Meeting Tools: ideokonferenz]
+            E --> E2[Sicherheit: VPN, Passwortmanager]
+            
+            F --> F1[Unterhaltung: Streaming-Apps]
+            F --> F2[Gaming: Hardware]
+            
+            G --> G1[Unbekannte Begriffe: Glossar]
+            G --> G2[Vertiefung: Bücher, Kurse]
+            
+            E1 & E2 & F1 & F2 & G1 & G2 --> H{Verknüpfungen visualisieren?}
+            
+            H -->|Ja| I[Mindmap erstellen]
+            H -->|Nein| J[Liste erstellen]
+            
+            I & J --> K{Aktualisierung notwendig?}
+            
+            K -->|Ja| L[Kategorien überprüfen und anpassen]
+            K -->|Nein| M[Flowchart speichern]
+            
+            L & M --> N[Ende: Kategorien im Alltag nutzen]
+            
+            style A fill:#87CEEB,stroke:#333,stroke-width:2px
+            style N fill:#98FB98,stroke:#333,stroke-width:2px
+            style B fill:#FFA07A,stroke:#333,stroke-width:2px
+            style D fill:#FFA07A,stroke:#333,stroke-width:2px
+            style H fill:#FFA07A,stroke:#333,stroke-width:2px
+            style K fill:#FFA07A,stroke:#333,stroke-width:2px
+            style E fill:#DDA0DD,stroke:#333,stroke-width:2px
+            style F fill:#87CEFA,stroke:#333,stroke-width:2px
+            style G fill:#98FB98,stroke:#333,stroke-width:2px
+    </div>
+
+    <script>
+        // Mermaid initialisieren
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</body>
+</html>
